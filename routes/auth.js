@@ -7,4 +7,5 @@ router.post('/login', authcontroller.login);
 router.get('/logout', authcontroller.logout);
 router.post('/remove_blog', authcontroller.remove_blog);
 router.post('/add_blog', authcontroller.add_blog);
+router.post('/edit_blog', authcontroller.edit_blog);
 module.exports = router;
