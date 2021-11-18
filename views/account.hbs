@@ -82,19 +82,23 @@
               <button type="submit" id="bth" class="btn btn-danger btn-sm" name="delete">Delete</button>
               </form>
               </div>
-
-            <div class="col-sm-12 col-lg-6 justify-content-center" style="margin: 3% auto;">
-              <a href="../index"><button type="button" id="bth">Edit</button></a>
+              <div class="col-sm-12 col-lg-6 justify-content-center" style="margin: 3% auto;">
+                <button type="submit" id="bth" class="btn btn-danger btn-sm" onclick="viewer()" name="editview">Edit</button>
+</div>
+              <div class="col-sm-12 col-lg-12 justify-content-center" style="margin: 3% auto; display: none;" id="frm">
+              <form action = "/auth/edit_blog" method="post">
+                              <input type="text" placeholder="Edit Title" class="form-control my-3 bg-light text-left" name="title">
+                <input type="text" placeholder="Name" class="form-control my-3 bg-light text-left" name="name">
+                <textarea name="content" placeholder="Enter Blog Content Here" class="form-control my-3 bg-left" cols="20" rows="10"></textarea>
+              <input type="hidden"  name ="id" value="{{this.id}}">
+              <in
+              <button type="submit" id="bth" class="btn btn-danger btn-sm" name="edit">Commit Changes</button>
               </div>
         </div>
     {{/each}}
          </div>
   <div class="row" style="background: none; padding: 1%;">
-        <div class="col-sm-12 col-lg-6">
-        <a href="index" style="text-decoration: none;">
-        <h3 style=" border-radius: 20px; color: #eee; margin: 3% auto; background-color: rgba(212, 5, 5, 0.719);padding: 3%; width: 80%;">CHECK OUT THE SERVICES</h3></a>
-      </div>
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-8 col-lg-8 justify-content-center" style="margin: auto;">
     <a href="index" style="text-decoration: none;">
       <h3 style=" border-radius: 20px; color: #eee; margin: 3% auto; background-color: rgba(212, 5, 5, 0.719);padding: 3%; width: 80%;"> BACK TO HOME</h3></a>
     </div>
@@ -105,6 +109,14 @@
             <footer>
               <h4> A Project site made by Harshit Rautela, 2019CSC1038</h4><h4> Khalsa College, for subject internet technology, sem V</h4>
               </footer>
+              <script>
+                                   function viewer()
+                   {
+                      document.getElementById("frm").style.display = "block";
+                    }
+
+
+              </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
