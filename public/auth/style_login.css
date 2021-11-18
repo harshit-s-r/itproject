@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Raleway:wght@300&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  background-image: url(./Images/musicbgr.jpg);
+  background-attachment:fixed;
+  background-size: cover;
+}
+.cfx {
+  clear: both;
+}
+.nav-item{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #999;
+}
+nav ul li a:hover, nav ul li.active a
+{
+  opacity: 1;
+  color: #eee;
+}
+.box{
+  width: 33%;
+  border-radius: 4%;
+  padding: 2%;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #0a233f;
+  text-align: center;
+  opacity: 0.8;
+}
+.box h1
+{
+  color: #ddd;
+  text-transform: uppercase;
+  font-size:25px;
+}
+.box input[type = "text"], .box input[type = "password"]
+{
+  border:0;
+  background: none;
+  display: block;
+  margin: 16px auto;
+  text-align: center;
+  border: 2px solid rgb(68, 136, 133);
+  padding: 14px 6px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}

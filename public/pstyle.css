@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Raleway:wght@300&display=swap');
+body {
+  margin:0;
+  background-image:url("images/bkg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Raleway';
+  font-size:18px;
+  color:#444;
+  text-align: center;
+  overflow: auto;
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+img{
+    max-width:100%;
+}
+.title
+{
+    background-color: rgba(255, 255, 255, 0.753);
+    margin: 2%;
+    border-radius: 20px;
+    padding-top: 5%;
+    font-size: large;
+    font-family: 'Raleway';
+    text-align: center;
+    color: rgb(255, 44, 7);
+    opacity: 0.8;
+    padding-bottom: 5%;
+}
+header {
+    text-align: center;
+}
+hr {
+    opacity: 0.6;
+    height: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#666;
+ }
+
+.nav-item{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #aaa;
+}
+nav ul li a:hover, nav ul li.active a
+{
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+}
+.row{
+    background-attachment: fixed;
+    background-color: rgba(126, 1, 1, 0.719);
+    padding: 2%;
+    margin: 2% auto;
+    border-radius: 30px;
+}
+.row img{
+    width:70%;
+}
+.row h1{
+    margin-top: 2%;
+    background-color: rgba(126, 20, 1, 0.582);
+    margin-bottom: 4%;
+    border-radius: 20px;
+    color: #eee;
+    padding: 1%;
+}
+.cfx {
+    clear: both;
+}
+footer{
+  background-color: rgb(179, 32, 32);
+  width: auto;
+  color:#eee;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  padding: 1%;
+}
+
+  #bth
+  {
+    background-color: rgba(219, 58, 58, 0.685);
+    border: none;
+    color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 40px;
+    transition: 0.25s;
+    margin: 5%;
+  }
+  #bth:hover
+  {   
+       background-color: #5b5;
+  }

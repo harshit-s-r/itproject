@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Raleway:wght@300&display=swap');
+body {
+    margin:0;
+    background-color: #e2dede;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway';
+    font-size:18px;
+    color:#444;
+    text-align: center;
+    overflow: auto;
+}
+#foreground{
+    background-image: url("Images/backwall.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+img{
+    max-width:100%;
+}
+.title
+{
+    padding-top: 5%;
+    font-size: large;
+    font-family: 'Raleway';
+    text-align: center;
+    color: rgb(22, 141, 196);
+    opacity: 0.8;
+    padding-bottom: 5%;
+}
+
+header {
+    text-align: center;
+}
+hr {
+    opacity: 0.6;
+    width: 1050px;
+    height: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#666;
+ }
+
+.nav-item{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #999;
+}
+nav ul li a:hover, nav ul li.active a
+{
+    opacity: 1;
+    color: #eee;
+}
+.row{
+    background-attachment: fixed;
+    background-color: #222;
+    padding: 5%;
+    border-radius: 1%;
+}
+#lc{
+    background-color: rgb(33, 111, 156);
+    opacity: 0.8;
+    border-radius: 2%;
+    text-decoration: none;
+    text-align: right;
+    font-size: 25 px;
+    padding: 3%;
+    margin: auto;
+    color: #cdd;
+    float: left;
+    transition:   color 400ms, background-color 400ms;
+}  
+#lc:hover{
+    color: #eee;
+    background-color: rgb(54, 145, 197);
+}
+#lc h1 a{
+    text-decoration: none;
+    color: #eee;
+    opacity: 1;
+}
+#rc h1 a{
+    text-decoration: none;
+    color: #eee;
+    opacity:1;
+}
+#music{
+    background-image: url("./Images/musicbgr.jpg");
+    background-attachment: fixed;
+
+}
+#graphics{
+    background-image: url("./Images/graphicbgr.jpg");
+    background-attachment: fixed;
+}
+#animated{
+    background-image: url("./Images/animatedbgr.png");
+    background-attachment: fixed;
+}
+#photos{
+    background-image: url("./Images/graphicbgr.jpg");
+    background-attachment: fixed;
+}
+#rc{
+    background-color: rgb(33, 111, 156);
+    opacity: 0.8;
+    border-radius: 2%;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: left;
+    color: #cdd;
+    padding: 3%;
+    margin:auto;
+    float: right;
+    transition:   color 400ms, background-color 400ms;
+}
+#rc:hover{
+    color: #eee;
+    background-color: rgb(54, 145, 197);
+}
+#sidebar {
+    float: right;
+    padding: 1%;
+    margin: auto;
+}
+#sidebar video{
+    opacity: 0.95;
+    border-radius: 10px;
+}
+#sidebarx{
+    float: left;
+    padding: 1%;
+    margin: auto;
+}
+#sidebarx video{
+    opacity: 0.9;
+    border-radius: 10px;
+}
+.cfx {
+    clear: both;
+}
+
+.hello{
+    width:auto;
+    margin: auto;
+    color: #dfdede;
+    background-color: rgba(33, 111, 156, 0.842);
+    border-radius: 2%;
+    opacity: 0.8;
+    padding: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-size: 25px;
+}
+.hello img{
+    width: 20%;
+    margin: 2%;
+    border-radius: 25%;
+}
+footer{
+    background-color: rgb(32, 78, 134);
+    width: auto;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+.social{
+    font-size: 400%;
+    text-align: center;
+}
+.social a {
+color: #fff;
+padding: 3%;
+}
+.social a:hover{
+    color: #222;
+    padding: 3%;
+}
+
+#button {
+  display: inline-block;
+  background-color: rgb(22, 141, 196);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 0px;
+  }
+}

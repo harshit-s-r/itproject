@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Raleway:wght@300&display=swap');
+body {
+    margin:0;
+    background-color: #ccc;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway';
+    font-size:18px;
+    color:#444;
+    text-align: center;
+    overflow: auto;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+img{
+    max-width:100%;
+}
+.title
+{
+    padding-top: 5%;
+    font-size: large;
+    font-family: 'Raleway';
+    text-align: center;
+    color: rgb(20, 80, 150);
+    opacity: 0.8;
+    padding-bottom: 5%;
+}
+
+header {
+    text-align: center;
+}
+hr {
+    opacity: 0.6;
+    height: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#666;
+ }
+
+.nav-item{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #aaa;
+}
+nav ul li a:hover, nav ul li.active a
+{
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+}
+.row{
+    background-attachment: fixed;
+    background-color: rgba(16, 58, 105, 0.8);
+    padding: 2%;
+    margin: 2%;
+    border-radius: 30px;
+}
+.row img{
+    width:70%;
+}
+.row h1{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: #ccc;
+    padding: 1%;
+}
+.cfx {
+    clear: both;
+}
+footer{
+  background-color: rgb(32, 78, 134);
+  width: auto;
+  margin-bottom: 2%;
+  padding: 1%;
+}
+.social{
+    font-size: 400%;
+    text-align: center;
+}
+.social a {
+color: #fff;
+padding: 3%;
+}
+.social a:hover{
+    color: #222;
+    padding: 3%;
+}
+#seeprofile {
+  background-color: rgb(96, 137, 190);
+    border: none;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 40px;
+    transition: 0.25s;
+    margin: 5%;
+  }
+
+  #seeprofile:hover
+  {
+    background: #5b5;
+  }
+
+  #hirebtn {
+    background-color: rgb(96, 137, 190);
+      border: none;
+      color: white;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 24px;
+      border-radius: 40px;
+      transition: 0.25s;
+      margin: 5%;
+    }
+  
+    #hirebtn:hover
+    {
+      background: #5b5;
+    }
+  .slider
+  {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slides
+  {
+    width: 500%;
+    display: flex;
+  }
+  
+  .slides input
+  {
+    display: none;
+  }
+  
+  .slide
+  {
+    width: 20%;
+    transition: 2s;
+  }
+
+  .slide img, .slide video
+  {
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    border-radius: 80px;
+  }
+  .navigation-manual{
+    margin: auto;
+    margin-top: -10px;
+    justify-content: center;
+  }
+  
+  .manual-btn
+  {
+    overflow: auto;
+    margin: auto;
+    background-color: #88b;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:last-child)
+  {
+    margin-right: 40px;
+  }
+  
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  /*css for automatic navigation*/
+  .navigation-auto
+  {
+    position: absolute;
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 460px;
+  }
+
+  .navigation-auto div{
+    display: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child)
+  {
+    margin-right: 4%;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  #bth
+  {
+    background-color: rgba(22, 81, 150, 0.6);
+    border: none;
+    color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 40px;
+    transition: 0.25s;
+    margin: 5%;
+  }
+  #bth:hover
+  {   
+       background-color: #5b5;
+  }
+
+  #hp
+  {
+    background-color: rgba(22, 81, 150, 0.6);
+    border: none;
+    color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 40px;
+    transition: 0.25s;
+    margin: 5%;
+  }
+  #hp:hover
+  {   
+       background-color: #5b5;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    opacity: 0.96;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    backdrop-filter: blur(2rem);
+    animation: fadeAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards backwards;
+    
+  }
+  @keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+        display: none;
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        opacity: 0.96;
+        display: block;
+        backdrop-filter: blur(2rem);
+    }
+}
+
+  /* Modal Content/Box */ 
+  .modal-content {
+    background-color: #e26576;
+    margin: 3% auto; /* 15% from the top and centered */
+    padding: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 20px;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Buttons */
+  .close {
+    text-align: right;
+    color: #aaa;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close2 {
+    text-align: right;
+    color: #aaa;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .rangeslider
+  {
+    width: 80%;
+    padding: 4%;
+    margin: auto;
+}
+  
+.myslider {
+    -webkit-appearance: none;
+    background: #bbb;
+    border-radius: 10px;
+    width: 70%;
+    height: 30px;
+    opacity: 2;
+   }
+  
+  
+.myslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: rgba(27, 109, 163,0.8);
+    width: 5%;
+    height: 30px;
+    border-radius: 6px;
+}
+  
+  
+.myslider:hover {
+    opacity: 1;
+}
+
+#button {
+  display: inline-block;
+  background-color: rgb(22, 141, 196);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 0px;
+  }
+}
+
+.box input[type = "text"]
+{
+  border:0;
+  background-color: #ccc;
+  display: block;
+  margin: 16px auto;
+  text-align: center;
+  border: 2px solid rgb(68, 136, 133);
+  padding: 14px 6px;
+  width: 70%;
+  outline: none;
+  color: #222;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus{
+  width: 80%;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
