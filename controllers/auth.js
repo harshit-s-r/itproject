@@ -233,6 +233,34 @@ else {
     next();
   }
 };
+
+exports.edit_blog = async(req, res, next)=>{
+  const {bid, title, name, content} = req.body
+  if (req.cookies.jwt) {
+      try {
+        const decoded = await promisify(jwt.verify)
+        (
+          req.cookies.jwt, 
+          process.env.JWT_SECRET);
+          console.log(decoded);
+  db.query('UPDATE blogdata SET ? WHERE id = '+ bid, {uid:[decoded.id],title: title, content: content, name:name,}, (err, results)=>{
+      if(err){
+          console.log(err)
+      }
+      else{
+          res.redirect('/account')
+      }
+  })
+}
+catch (err) {
+  return next();
+}
+}
+else {
+  next();
+}
+};
+
 exports.remove_blog = (req, res, next)=>{
     const {id} = req.body
     db.query('DELETE FROM blogdata where id = ?', [id], (err, results)=>{
